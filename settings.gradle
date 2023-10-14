@@ -1,2 +1,3 @@
 rootProject.name = 'KafkaSandBox'
+include 'kafka-basics'
 
