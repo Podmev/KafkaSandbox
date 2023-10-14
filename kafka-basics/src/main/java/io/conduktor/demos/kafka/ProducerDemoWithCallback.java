@@ -30,7 +30,8 @@ public class ProducerDemoWithCallback {
 
         properties.setProperty("batch.size", "400");
 
-        properties.setProperty("partitioner.class", RoundRobinPartitioner.class.getName());
+        // not for production
+        //properties.setProperty("partitioner.class", RoundRobinPartitioner.class.getName());
 
         // create the Producer
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
